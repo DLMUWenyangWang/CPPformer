@@ -3,9 +3,9 @@ This repository contains the PyTorch implementation of **CPPformer**, a hybrid t
 
 # Model Architecture
 The model consists of two parallel branches:
-1.  **Local Perception Stream (Micro-Dynamics)**: Captures local temporal patterns and short-term trends.
-2.  **Global Association Stream (Macro-Dynamics)**: Captures global dependencies and long-range interactions using Self-Attention.
-3.  **Adaptive Gate Fusion**: A learnable gating mechanism that dynamically weights the contributions of the LSTM and Transformer outputs based on the input features.
+1.  **Local Perception Stream (Micro-Dynamics)**: Focuses on capturing local temporal patterns, inertia, and high-frequency volatility that characterize immediate market sentiment.
+2.  **Global Association Stream (Macro-Dynamics)**: Captures long-range dependencies and global semantic correlations, identifying structural breaks and recurring trends over extended horizons.
+3.  **Adaptive Gate Fusion**: Dynamically weights the contributions of the Local and Global streams based on the input context, allowing the model to switch focus adaptively.
 
 # Requirements
 To install all necessary dependencies, please run the following command:
