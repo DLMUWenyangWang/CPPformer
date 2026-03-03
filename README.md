@@ -22,4 +22,7 @@ CPPformer/
 ├── dataset/            
 ├── run.py              
 ├── requirements.txt    
-└── README.md           
+└── README.md
+```
+# Contact
+For any questions, please open an issue or contact the author.
